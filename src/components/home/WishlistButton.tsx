@@ -47,15 +47,16 @@ export default function WishlistButton({
     <button
       onClick={handleToggle}
       disabled={isPending}
-      className={`p-2 rounded-full transition-all ${
+      className={`group p-2.5 rounded-xl transition-all duration-300 backdrop-blur-md shadow-sm border ${
         wishlisted
-          ? "bg-red-50 text-red-500"
-          : "bg-white/80 text-gray-400 hover:text-red-400"
-      } shadow-sm`}
+          ? "bg-red-500 border-red-500 text-white shadow-red-200"
+          : "bg-white/90 border-transparent text-gray-400 hover:text-red-500 hover:bg-white"
+      }`}
     >
       <Heart
-        size={16}
-        className={wishlisted ? "fill-red-500" : ""}
+        size={18}
+        strokeWidth={2.5}
+        className={`${wishlisted ? "fill-white" : "group-hover:scale-110 transition-transform duration-300"}`}
       />
     </button>
   );

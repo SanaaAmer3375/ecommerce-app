@@ -6,7 +6,7 @@ import { Product } from "@/types";
 import { useState } from "react";
 import { useCart } from "@/providers/CartProvider";
 import { Star, ShoppingCart, Package, RotateCcw, Shield, Minus, Plus } from "lucide-react";
-import WishlistButton from "@/components/ui/WishlistButton";
+import WishlistButton from "@/components/home/WishlistButton";
 import ProductImages from "@/components/products/ProductImages";
 
 export default function ProductDetailClient({

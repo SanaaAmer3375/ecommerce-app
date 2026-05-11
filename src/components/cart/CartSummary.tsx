@@ -4,6 +4,7 @@ import { useCart } from "@/providers/CartProvider";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { CreditCard, ArrowRight } from "lucide-react";
 
 interface ShippingOption {
   id: string;
@@ -17,7 +18,7 @@ interface CartSummaryProps {
 }
 
 export default function CartSummary({ shippingOptions, taxRate }: CartSummaryProps) {
-    const router = useRouter();
+  const router = useRouter();
   const { items, totalPrice } = useCart();
   const [selectedShipping, setSelectedShipping] = useState(shippingOptions[0]);
 
@@ -27,70 +28,87 @@ export default function CartSummary({ shippingOptions, taxRate }: CartSummaryPro
   if (items.length === 0) return null;
 
   return (
-    <div className="w-full lg:w-80 shrink-0">
-      <div className="bg-white rounded-2xl border border-gray-100 p-6 sticky top-24">
-        <h2 className="font-bold text-text text-lg mb-6">Order Summary</h2>
+    <div className="p-8 space-y-8">
+      <h2 className="font-extrabold text-text text-2xl tracking-tight">Order Summary</h2>
 
-        <div className="mb-5">
-          <p className="text-sm font-medium text-text mb-3">Shipping Options</p>
-          <div className="flex flex-col gap-2">
-            {shippingOptions.map((option) => (
-              <label
-                key={option.id}
-                className={`flex items-center justify-between p-3 rounded-xl border cursor-pointer transition-colors ${
-                  selectedShipping.id === option.id
-                    ? "border-primary bg-primary/5"
-                    : "border-gray-200 hover:border-gray-300"
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <input
-                    type="radio"
-                    name="shipping"
-                    value={option.id}
-                    checked={selectedShipping.id === option.id}
-                    onChange={() => setSelectedShipping(option)}
-                    className="accent-primary"
-                  />
-                  <span className="text-xs text-text">{option.label}</span>
+      {/* Shipping Selector */}
+      <div className="space-y-4">
+        <p className="text-xs font-bold text-text/40 uppercase tracking-widest">Shipping Method</p>
+        <div className="flex flex-col gap-3">
+          {shippingOptions.map((option) => (
+            <label
+              key={option.id}
+              className={`group flex items-center justify-between p-4 rounded-2xl border transition-all cursor-pointer ${
+                selectedShipping.id === option.id
+                  ? "border-primary bg-primary/5 ring-1 ring-primary"
+                  : "border-gray-100 hover:border-gray-200 bg-gray-50/30"
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center transition-all ${
+                  selectedShipping.id === option.id ? "border-primary bg-primary" : "border-gray-300 bg-white"
+                }`}>
+                  {selectedShipping.id === option.id && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
                 </div>
-                <span className="text-xs font-medium text-text">${option.price.toFixed(2)}</span>
-              </label>
-            ))}
+                <input
+                  type="radio"
+                  name="shipping"
+                  className="hidden"
+                  checked={selectedShipping.id === option.id}
+                  onChange={() => setSelectedShipping(option)}
+                />
+                <span className={`text-sm font-bold ${selectedShipping.id === option.id ? "text-primary" : "text-text/70"}`}>
+                  {option.label.split('(')[0]}
+                </span>
+              </div>
+              <span className="text-sm font-extrabold text-text">${option.price.toFixed(2)}</span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      {/* Calculations */}
+      <div className="space-y-4 pt-6 border-t border-gray-100">
+        <div className="flex justify-between text-sm">
+          <span className="text-text-muted font-medium">Subtotal</span>
+          <span className="text-text font-bold">${totalPrice.toFixed(2)}</span>
+        </div>
+        <div className="flex justify-between text-sm">
+          <span className="text-text-muted font-medium">Shipping</span>
+          <span className="text-text font-bold">${selectedShipping.price.toFixed(2)}</span>
+        </div>
+        <div className="flex justify-between text-sm">
+          <span className="text-text-muted font-medium">Estimated Tax</span>
+          <span className="text-text font-bold">${tax.toFixed(2)}</span>
+        </div>
+        
+        <div className="pt-4 mt-2 border-t border-gray-100 flex justify-between items-end">
+          <div>
+            <p className="text-[10px] font-bold text-text/30 uppercase tracking-[0.2em] mb-1">Total Amount</p>
+            <span className="text-3xl font-black text-text tracking-tighter">${total.toFixed(2)}</span>
+          </div>
+          <div className="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded-md mb-1">
+            USD
           </div>
         </div>
+      </div>
 
-        {/* Totals */}
-        <div className="flex flex-col gap-3 text-sm border-t border-gray-100 pt-4">
-          <div className="flex justify-between">
-            <span className="text-text-muted">Subtotal</span>
-            <span className="text-text font-medium">${totalPrice.toFixed(2)}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-text-muted">Shipping</span>
-            <span className="text-text font-medium">${selectedShipping.price.toFixed(2)}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-text-muted">Tax ({(taxRate * 100).toFixed(0)}%)</span>
-            <span className="text-text font-medium">${tax.toFixed(2)}</span>
-          </div>
-          <div className="border-t border-gray-100 pt-3 flex justify-between">
-            <span className="font-bold text-text">Total</span>
-            <span className="font-bold text-text">${total.toFixed(2)}</span>
-          </div>
-        </div>
-
+      {/* Actions */}
+      <div className="space-y-3 pt-2">
         <button
-        onClick={() => router.push("/checkout")}
-        className="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-primary-dark transition-colors mt-6"
+          onClick={() => router.push("/checkout")}
+          className="w-full bg-primary text-white py-5 rounded-2xl font-bold hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 active:scale-[0.98]"
         >
-        Proceed to Checkout
+          <CreditCard size={20} />
+          Proceed to Checkout
         </button>
+        
         <Link
           href="/products"
-          className="w-full border border-gray-200 text-text py-3 rounded-lg font-medium hover:bg-bg transition-colors mt-3 flex items-center justify-center"
+          className="w-full flex items-center justify-center gap-2 py-4 text-sm font-bold text-text/40 hover:text-primary transition-colors"
         >
-          Continue Shopping
+          Keep Shopping
+          <ArrowRight size={16} />
         </Link>
       </div>
     </div>
