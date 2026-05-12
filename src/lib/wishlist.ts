@@ -13,14 +13,20 @@ function readDB(): DB {
   try {
     if (!fs.existsSync(DB_PATH)) return { users: [], wishlist: [] };
     const data = fs.readFileSync(DB_PATH, "utf-8");
-    return JSON.parse(data);
+    const parsed = JSON.parse(data);
+    return {
+      users: parsed.users || [],
+      wishlist: parsed.wishlist || []
+    };
   } catch {
     return { users: [], wishlist: [] };
   }
 }
 
 function writeDB(data: DB) {
-  fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
+  const currentDB = readDB();
+  const updatedDB = { ...currentDB, ...data };
+  fs.writeFileSync(DB_PATH, JSON.stringify(updatedDB, null, 2));
 }
 
 export function getUserWishlist(userId: string): number[] {

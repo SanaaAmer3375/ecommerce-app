@@ -45,4 +45,37 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   pages: {
     signIn: "/login",
   },
+  callbacks: {
+    async signIn({ user, account }) {
+      if (account?.provider === "google" || account?.provider === "facebook") {
+        const identifier = user.email || user.id; 
+        
+        if (identifier) {
+          const existingUser = await findUserByEmail(identifier);
+          if (!existingUser) {
+            await createUser(
+              user.name || "Social User", 
+              identifier, 
+              "SOCIAL_AUTH"
+            );
+          }
+        }
+      }
+      return true;
+    },
+    async jwt({ token, user }) {
+      if (user) {
+        token.id = user.id;
+        token.email = user.email || user.id;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      if (session.user) {
+        session.user.id = token.id as string;
+        session.user.email = token.email as string;
+      }
+      return session;
+    },
+  },
 });

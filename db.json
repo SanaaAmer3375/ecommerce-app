@@ -1,553 +1,69 @@
 {
   "orders": [
     {
-      "id": "ORD-1778496529636",
+      "id": "ORD-1778591772717",
       "userId": "sanaaelshafae283@gmail.com",
       "items": [
-        {
-          "productId": 3,
-          "title": "Powder Canister",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
-          "price": 14.99,
-          "quantity": 2
-        },
         {
           "productId": 2,
           "title": "Eyeshadow Palette with Mirror",
           "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
           "price": 19.99,
           "quantity": 1
+        },
+        {
+          "productId": 13,
+          "title": "Bedside Table African Cherry",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+          "price": 299.99,
+          "quantity": 1
         }
       ],
-      "subtotal": 49.97,
-      "shipping": 5.99,
-      "tax": 3.9976,
-      "total": 59.9576,
-      "shippingOption": "Standard Shipping (5-7 days)",
+      "subtotal": 319.98,
+      "shipping": 24.99,
+      "tax": 25.5984,
+      "total": 370.56840000000005,
+      "shippingOption": "Overnight Shipping (1 day)",
       "address": {
-        "name": "Sanaa Amer",
+        "name": "Sanaa Amer Ali",
         "email": "sanaaelshafae283@gmail.com",
         "phone": "01128293906",
-        "address": "Fayoum",
+        "address": "Egypt",
         "city": "Fayoum",
         "state": ""
       },
       "status": "pending",
-      "createdAt": "2026-05-11T10:48:49.637Z"
-    },
-    {
-      "id": "ORD-1778499391759",
-      "userId": "sanaaelshafae283@gmail.com",
-      "items": [
-        {
-          "productId": 11,
-          "title": "Annibale Colombo Bed",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
-          "price": 1899.99,
-          "quantity": 1
-        },
-        {
-          "productId": 12,
-          "title": "Annibale Colombo Sofa",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
-          "price": 2499.99,
-          "quantity": 1
-        }
-      ],
-      "subtotal": 4399.98,
-      "shipping": 5.99,
-      "tax": 351.99839999999995,
-      "total": 4757.9684,
-      "shippingOption": "Standard Shipping (5-7 days)",
-      "address": {
-        "name": "Sanaa Amer",
-        "email": "sanaaelshafae283@gmail.com",
-        "phone": "01128293906",
-        "address": "Giza",
-        "city": "Fayoum",
-        "state": ""
-      },
-      "status": "pending",
-      "createdAt": "2026-05-11T11:36:31.759Z"
-    },
-    {
-      "id": "ORD-1778520839704",
-      "userId": "sanaa123@gmail.com",
-      "items": [
-        {
-          "productId": 3,
-          "title": "Powder Canister",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
-          "price": 14.99,
-          "quantity": 1
-        },
-        {
-          "productId": 4,
-          "title": "Red Lipstick",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
-          "price": 12.99,
-          "quantity": 1
-        },
-        {
-          "productId": 14,
-          "title": "Knoll Saarinen Executive Conference Chair",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
-          "price": 499.99,
-          "quantity": 1
-        }
-      ],
-      "subtotal": 527.97,
-      "shipping": 5.99,
-      "tax": 42.2376,
-      "total": 576.1976000000001,
-      "shippingOption": "Standard Shipping (5-7 days)",
-      "address": {
-        "name": "Sanaa ",
-        "email": "sanaa123@gmail.com",
-        "phone": "01128293906",
-        "address": "Cairo - Egypt",
-        "city": "Cairo",
-        "state": ""
-      },
-      "status": "pending",
-      "createdAt": "2026-05-11T17:33:59.704Z"
+      "createdAt": "2026-05-12T13:16:12.717Z"
     }
   ],
   "users": [
     {
-      "id": "1778446868144",
-      "name": "Sanaa Amer",
+      "id": "1778590641365",
+      "name": "Sanaa Amer Ali Ali Ahmed",
+      "email": "sa3375@fayoum.edu.eg",
+      "password": "$2b$10$iNKPUwL.TvXpbN09BpVjrechIu2wKFTuxmz269Y9ls.E8kWvRptKW",
+      "createdAt": "2026-05-12T12:57:21.365Z"
+    },
+    {
+      "id": "1778591700560",
+      "name": "Sanaa Amer Ali",
       "email": "sanaaelshafae283@gmail.com",
-      "password": "$2b$10$YLglG9o8Vnyhei.Ol8tsEu0SKVL5Ju6LfWBrzYtz5DWwy1xdmcRLe",
-      "createdAt": "2026-05-10T21:01:08.144Z"
-    },
-    {
-      "id": "1778503098659",
-      "name": "Afnan Nasser",
-      "email": "Afnan123@gmail.com",
-      "password": "$2b$10$yNfxHZ.qmqPX6LdPCxzVUuRRqxFF3GFGn8FtpZejyaMOZA58XDlVG",
-      "createdAt": "2026-05-11T12:38:18.659Z"
-    },
-    {
-      "id": "1778520751020",
-      "name": "Sanaa ",
-      "email": "sanaa123@gmail.com",
-      "password": "$2b$10$LFfnaM.43pxNXX8cNzrHXOcz0tDbSrsqCz2XTI/ny56CCCFlPyAku",
-      "createdAt": "2026-05-11T17:32:31.020Z"
+      "password": "$2b$10$yngAyqCYgxRjrnBhirK0vuC9CQOwvl.W3kcdI0KMCrvB/jjT/oJee",
+      "createdAt": "2026-05-12T13:15:00.560Z"
     }
   ],
   "wishlist": [
     {
       "userId": "sanaaelshafae283@gmail.com",
-      "productIds": []
-    },
-    {
-      "userId": "Afnan123@gmail.com",
-      "productIds": []
-    },
-    {
-      "userId": "sanaa123@gmail.com",
       "productIds": [
-        4,
-        12
+        1
       ]
     }
   ],
   "cart": [
     {
-      "userId": "Afnan123@gmail.com",
-      "items": [
-        {
-          "product": {
-            "id": 3,
-            "title": "Powder Canister",
-            "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
-            "category": "beauty",
-            "price": 14.99,
-            "discountPercentage": 9.84,
-            "rating": 4.64,
-            "stock": 89,
-            "tags": [
-              "beauty",
-              "face powder"
-            ],
-            "brand": "Velvet Touch",
-            "sku": "BEA-VEL-POW-003",
-            "weight": 8,
-            "dimensions": {
-              "width": 29.27,
-              "height": 27.93,
-              "depth": 20.59
-            },
-            "warrantyInformation": "3 months warranty",
-            "shippingInformation": "Ships in 1-2 business days",
-            "availabilityStatus": "In Stock",
-            "reviews": [
-              {
-                "rating": 4,
-                "comment": "Would buy again!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Alexander Jones",
-                "reviewerEmail": "alexander.jones@x.dummyjson.com"
-              },
-              {
-                "rating": 5,
-                "comment": "Highly impressed!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Elijah Cruz",
-                "reviewerEmail": "elijah.cruz@x.dummyjson.com"
-              },
-              {
-                "rating": 1,
-                "comment": "Very dissatisfied!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Avery Perez",
-                "reviewerEmail": "avery.perez@x.dummyjson.com"
-              }
-            ],
-            "returnPolicy": "No return policy",
-            "minimumOrderQuantity": 22,
-            "meta": {
-              "createdAt": "2025-04-30T09:41:02.053Z",
-              "updatedAt": "2025-04-30T09:41:02.053Z",
-              "barcode": "8418883906837",
-              "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-            },
-            "images": [
-              "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
-            ],
-            "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp"
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": 4,
-            "title": "Red Lipstick",
-            "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
-            "category": "beauty",
-            "price": 12.99,
-            "discountPercentage": 12.16,
-            "rating": 4.36,
-            "stock": 91,
-            "tags": [
-              "beauty",
-              "lipstick"
-            ],
-            "brand": "Chic Cosmetics",
-            "sku": "BEA-CHI-LIP-004",
-            "weight": 1,
-            "dimensions": {
-              "width": 18.11,
-              "height": 28.38,
-              "depth": 22.17
-            },
-            "warrantyInformation": "3 year warranty",
-            "shippingInformation": "Ships in 1 week",
-            "availabilityStatus": "In Stock",
-            "reviews": [
-              {
-                "rating": 4,
-                "comment": "Great product!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Liam Garcia",
-                "reviewerEmail": "liam.garcia@x.dummyjson.com"
-              },
-              {
-                "rating": 5,
-                "comment": "Great product!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Ruby Andrews",
-                "reviewerEmail": "ruby.andrews@x.dummyjson.com"
-              },
-              {
-                "rating": 5,
-                "comment": "Would buy again!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Clara Berry",
-                "reviewerEmail": "clara.berry@x.dummyjson.com"
-              }
-            ],
-            "returnPolicy": "7 days return policy",
-            "minimumOrderQuantity": 40,
-            "meta": {
-              "createdAt": "2025-04-30T09:41:02.053Z",
-              "updatedAt": "2025-04-30T09:41:02.053Z",
-              "barcode": "9467746727219",
-              "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-            },
-            "images": [
-              "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"
-            ],
-            "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp"
-          },
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "userId": "sanaa123@gmail.com",
-      "items": [
-        {
-          "product": {
-            "id": 2,
-            "title": "Eyeshadow Palette with Mirror",
-            "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
-            "category": "beauty",
-            "price": 19.99,
-            "discountPercentage": 18.19,
-            "rating": 2.86,
-            "stock": 34,
-            "tags": [
-              "beauty",
-              "eyeshadow"
-            ],
-            "brand": "Glamour Beauty",
-            "sku": "BEA-GLA-EYE-002",
-            "weight": 9,
-            "dimensions": {
-              "width": 9.26,
-              "height": 22.47,
-              "depth": 27.67
-            },
-            "warrantyInformation": "1 year warranty",
-            "shippingInformation": "Ships in 2 weeks",
-            "availabilityStatus": "In Stock",
-            "reviews": [
-              {
-                "rating": 5,
-                "comment": "Great product!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Savannah Gomez",
-                "reviewerEmail": "savannah.gomez@x.dummyjson.com"
-              },
-              {
-                "rating": 4,
-                "comment": "Awesome product!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Christian Perez",
-                "reviewerEmail": "christian.perez@x.dummyjson.com"
-              },
-              {
-                "rating": 1,
-                "comment": "Poor quality!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Nicholas Bailey",
-                "reviewerEmail": "nicholas.bailey@x.dummyjson.com"
-              }
-            ],
-            "returnPolicy": "7 days return policy",
-            "minimumOrderQuantity": 20,
-            "meta": {
-              "createdAt": "2025-04-30T09:41:02.053Z",
-              "updatedAt": "2025-04-30T09:41:02.053Z",
-              "barcode": "9170275171413",
-              "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-            },
-            "images": [
-              "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"
-            ],
-            "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp"
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": 3,
-            "title": "Powder Canister",
-            "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
-            "category": "beauty",
-            "price": 14.99,
-            "discountPercentage": 9.84,
-            "rating": 4.64,
-            "stock": 89,
-            "tags": [
-              "beauty",
-              "face powder"
-            ],
-            "brand": "Velvet Touch",
-            "sku": "BEA-VEL-POW-003",
-            "weight": 8,
-            "dimensions": {
-              "width": 29.27,
-              "height": 27.93,
-              "depth": 20.59
-            },
-            "warrantyInformation": "3 months warranty",
-            "shippingInformation": "Ships in 1-2 business days",
-            "availabilityStatus": "In Stock",
-            "reviews": [
-              {
-                "rating": 4,
-                "comment": "Would buy again!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Alexander Jones",
-                "reviewerEmail": "alexander.jones@x.dummyjson.com"
-              },
-              {
-                "rating": 5,
-                "comment": "Highly impressed!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Elijah Cruz",
-                "reviewerEmail": "elijah.cruz@x.dummyjson.com"
-              },
-              {
-                "rating": 1,
-                "comment": "Very dissatisfied!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Avery Perez",
-                "reviewerEmail": "avery.perez@x.dummyjson.com"
-              }
-            ],
-            "returnPolicy": "No return policy",
-            "minimumOrderQuantity": 22,
-            "meta": {
-              "createdAt": "2025-04-30T09:41:02.053Z",
-              "updatedAt": "2025-04-30T09:41:02.053Z",
-              "barcode": "8418883906837",
-              "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-            },
-            "images": [
-              "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
-            ],
-            "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp"
-          },
-          "quantity": 1
-        }
-      ]
-    },
-    {
       "userId": "sanaaelshafae283@gmail.com",
-      "items": [
-        {
-          "product": {
-            "id": 3,
-            "title": "Powder Canister",
-            "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
-            "category": "beauty",
-            "price": 14.99,
-            "discountPercentage": 9.84,
-            "rating": 4.64,
-            "stock": 89,
-            "tags": [
-              "beauty",
-              "face powder"
-            ],
-            "brand": "Velvet Touch",
-            "sku": "BEA-VEL-POW-003",
-            "weight": 8,
-            "dimensions": {
-              "width": 29.27,
-              "height": 27.93,
-              "depth": 20.59
-            },
-            "warrantyInformation": "3 months warranty",
-            "shippingInformation": "Ships in 1-2 business days",
-            "availabilityStatus": "In Stock",
-            "reviews": [
-              {
-                "rating": 4,
-                "comment": "Would buy again!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Alexander Jones",
-                "reviewerEmail": "alexander.jones@x.dummyjson.com"
-              },
-              {
-                "rating": 5,
-                "comment": "Highly impressed!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Elijah Cruz",
-                "reviewerEmail": "elijah.cruz@x.dummyjson.com"
-              },
-              {
-                "rating": 1,
-                "comment": "Very dissatisfied!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Avery Perez",
-                "reviewerEmail": "avery.perez@x.dummyjson.com"
-              }
-            ],
-            "returnPolicy": "No return policy",
-            "minimumOrderQuantity": 22,
-            "meta": {
-              "createdAt": "2025-04-30T09:41:02.053Z",
-              "updatedAt": "2025-04-30T09:41:02.053Z",
-              "barcode": "8418883906837",
-              "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-            },
-            "images": [
-              "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
-            ],
-            "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp"
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": 7,
-            "title": "Chanel Coco Noir Eau De",
-            "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
-            "category": "fragrances",
-            "price": 129.99,
-            "discountPercentage": 16.51,
-            "rating": 4.26,
-            "stock": 58,
-            "tags": [
-              "fragrances",
-              "perfumes"
-            ],
-            "brand": "Chanel",
-            "sku": "FRA-CHA-CHA-007",
-            "weight": 7,
-            "dimensions": {
-              "width": 24.5,
-              "height": 25.7,
-              "depth": 25.98
-            },
-            "warrantyInformation": "3 year warranty",
-            "shippingInformation": "Ships overnight",
-            "availabilityStatus": "In Stock",
-            "reviews": [
-              {
-                "rating": 4,
-                "comment": "Highly impressed!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Ruby Andrews",
-                "reviewerEmail": "ruby.andrews@x.dummyjson.com"
-              },
-              {
-                "rating": 5,
-                "comment": "Awesome product!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Leah Henderson",
-                "reviewerEmail": "leah.henderson@x.dummyjson.com"
-              },
-              {
-                "rating": 5,
-                "comment": "Very happy with my purchase!",
-                "date": "2025-04-30T09:41:02.053Z",
-                "reviewerName": "Xavier Wright",
-                "reviewerEmail": "xavier.wright@x.dummyjson.com"
-              }
-            ],
-            "returnPolicy": "No return policy",
-            "minimumOrderQuantity": 1,
-            "meta": {
-              "createdAt": "2025-04-30T09:41:02.053Z",
-              "updatedAt": "2025-04-30T09:41:02.053Z",
-              "barcode": "4091737746820",
-              "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
-            },
-            "images": [
-              "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
-              "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp",
-              "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp"
-            ],
-            "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp"
-          },
-          "quantity": 1
-        }
-      ]
+      "items": []
     }
   ]
 }
